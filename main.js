@@ -22,9 +22,24 @@ $btn.click((e) => {
 
 // carrusel
 
+
+/* 
 const myCarouselElement = document.querySelector('#myCarousel')
 
 const carousel = new bootstrap.Carousel(myCarouselElement, {
   interval: 2000,
   touch: false
-})
+}) */
+
+
+const $botonr = $("#botonR");
+const imgs = $(".img-carrusel");
+console.log(imgs);
+$botonr.click((e)=>{
+  const firstImg = $(".img-carrusel")[0];
+  $imgs.toggleClass("slide");
+  setTimeout(()=>{
+    $(".carrusel").insertAdjacentElement('beforeend', firstImg)
+    $imgs.toggleClass("slide");
+  },800);
+});

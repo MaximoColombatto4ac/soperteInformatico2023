@@ -1,0 +1,34 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.img-carrusel{
+    max-width: 600px;
+}
+.carrusel__container{
+    margin: auto;
+    width: 600px;
+    position: relative;
+    display: flex;
+    overflow-x: hidden;
+}
+.carrusel{
+    position: relative;
+    transform: translateY(50%);
+}
+.boton{
+    position: absolute;
+    color: white;
+    font-weight: bolder;
+    margin: 0 3rem;
+    cursor: pointer;
+}
+.boton:nth-child(odd){
+    right: 0;
+}
+.carrusel__item{
+    position: relative;
+    left: 0;
+    transition: all 0.8s ease;
+}
