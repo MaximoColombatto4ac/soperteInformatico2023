@@ -29,6 +29,11 @@
 }
 .carrusel__item{
     position: relative;
-    left: 0;
-    transition: all 0.8s ease;
+    left: -600px;
+}
+.slide{
+    left: -1200px;
+}
+.slidel{
+    left: 0px;
 }
